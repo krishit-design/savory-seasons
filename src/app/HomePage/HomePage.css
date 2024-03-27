@@ -1,0 +1,109 @@
+body{
+    background-color: #000;
+}
+
+.tab-bg{
+    background-color: var(--secondary-color);
+    color: #fafafa !important;
+}
+
+.content{
+    display: flex;
+    gap: 20px;
+    /* align-items: center; */
+    height: 100%;
+    padding: 40px 0;
+}
+
+.content img{
+    height: 100%;
+}
+
+.content .desc{
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.content-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+
+.linkWrap {
+    position: relative;
+    /* height: 150px; */
+    border-radius: 2px;
+    width: auto;
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+  }
+  
+  .cta {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* margin: auto; */
+    padding: 10px 24px;
+    color: var(--white-color);
+    /* font-family: Avenir, sans-serif; */
+    font-family: desc;
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+  .cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 28px;
+    background: var(--primary-color);
+    width: 56px;
+    height: 56px;
+    transition: all 0.3s ease;
+  }
+  .cta span {
+    position: relative;
+    font-size: 24px;
+    /* line-height: 18px; */
+    /* font-weight: 900; */
+    /* letter-spacing: 0.25em; */
+    /* text-transform: uppercase; */
+    vertical-align: middle;
+    font-weight: 400;
+  }
+  .cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: var(--white-color);
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+  }
+  .cta:hover {
+      color: var(--white-color);
+    /* background: #ffab9d; */
+  }
+  .cta:hover:before {
+    width: 100%;
+    /* color: red; */
+    background: var(--primary-color);
+  }
+  .cta:hover svg {
+    transform: translateX(0);
+  }
+  .cta:hover .active {
+    transform: scale(0.96);
+  }

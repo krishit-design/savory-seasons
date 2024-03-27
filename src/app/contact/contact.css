@@ -1,0 +1,41 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0;
+    margin: 0 auto;
+}
+.contact-content{
+    display: flex;
+    justify-content: flex-start;
+    gap: 100px;
+    align-items: center;
+}
+
+.bc-zinc{
+    background-color: rgb(39 39 42/var(--tw-bg-opacity));
+    border-color: #6b7280 !important;
+    border-width: 0px !important;
+}
+
+input[type="number"]{
+    -moz-appearance: textfield !important;
+    color: #fff;
+}
+
+textarea:focus-visible{
+    --tw-ring-color: rgb(163 163 163 / var(--tw-ring-opacity)) !important;
+}
+  
+textarea{
+    color: #fff;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+button {
+    border-color: #6b7280 !important;
+    border-width: 0px !important;
+}
