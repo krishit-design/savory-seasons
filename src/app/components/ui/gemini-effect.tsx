@@ -20,7 +20,7 @@ export const GeminiEffect = ({
   className?: string;
 }) => {
   return (
-    <div className={cn("sticky top-60", className)}>
+    <div className={cn("sticky top-60 md:top-36 sm:top-20", className)}>
       <p className="text-lg md:text-7xl font-normal pb-4 text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-100 to-neutral-300">
         {title || `Explore Our Menu`}
       </p>

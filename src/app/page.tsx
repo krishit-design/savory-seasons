@@ -4,8 +4,8 @@ import { HeroParallaxDemo } from "./HomePage/HomePage";
 import { SpotlightName } from "./HomePage/HomePage";
 import { TabsServices } from "./HomePage/HomePage";
 import { GeminiEffectMenu } from "./HomePage/HomePage";
-import { BackgroundBeamsFooter } from "./HomePage/HomePage";
 import InfiniteMovingCards from "./components/ui/infinite-moving-cards";
+import { BackgroundBeamsFooter } from "./components/Footer/footer";
 export default function Home() {
   return (
     <div>

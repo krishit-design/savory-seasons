@@ -1,6 +1,8 @@
 
 import React from "react";
 import { BackgroundBeams } from "../ui/background-beams";
+import "./footer.css"
+import Link from "next/link";
 
 export function BackgroundBeamsFooter() {
     return (
@@ -10,11 +12,11 @@ export function BackgroundBeamsFooter() {
             <img className="logo-img" src="assets/images/logo-ss.svg" alt="" />
             <div className="footer-desc">Established with a passion for creating delightful culinary experiences, Savory Seasons has been a trusted name in the catering industry.</div>
             <div className="social-media">
-              <a href="#"><img className="social-icon" src="assets/images/footer-icons/whatsapp.svg"
-                alt="" /></a>
-              <a href="#"><img className="social-icon" src="assets/images/footer-icons/instagram.svg"
-                alt="" /></a>
-              <a href="#"><img className="social-icon" src="assets/images/footer-icons/x.svg" alt="" /></a>
+              <Link href="#"><img className="social-icon" src="assets/images/footer-icons/whatsapp.svg"
+                alt="" /></Link>
+              <Link href="#"><img className="social-icon" src="assets/images/footer-icons/instagram.svg"
+                alt="" /></Link>
+              <Link href="#"><img className="social-icon" src="assets/images/footer-icons/x.svg" alt="" /></Link>
             </div>
           </div>
           <div className="links-connect">
@@ -23,10 +25,10 @@ export function BackgroundBeamsFooter() {
                 Quick Links
               </h4>
               <div className="connect-content">
-                <a href="#" className="contact-footer">MENU</a>
-                <a href="#" className="contact-footer">SERVICES</a>
-                <a href="#" className="contact-footer">CUSTOMIZATION</a>
-                <a href="#" className="contact-footer">CONTACT</a>
+                <Link href="/menu" className="contact-footer">MENU</Link>
+                <Link href="/service" className="contact-footer">SERVICES</Link>
+                {/* <Link href="#" className="contact-footer">CUSTOMIZATION</Link> */}
+                <Link href="/contact" className="contact-footer">CONTACT</Link>
               </div>
             </div>
             <div className="lets-connect">
@@ -34,12 +36,12 @@ export function BackgroundBeamsFooter() {
                 Let's Connect
               </h4>
               <div className="connect-content">
-                <a href="mailto:savoryseasons@yopmail.com" className="contact-footer"><img
-                  src="assets/images/footer-icons/mail.svg" alt="" />savoryseasons@yopmail.com</a>
-                <a href="tel:8742425485" className="contact-footer"><img
-                  src="assets/images/footer-icons/phone.svg" alt="" />8742425485</a>
-                <a href="#" className="contact-footer"><img src="assets/images/footer-icons/location.svg"
-                  alt="" />B-701 Blue Moon Tower, Gota, Ahmedabad</a>
+                <Link href="mailto:savoryseasons@yopmail.com" className="contact-footer"><img
+                  src="assets/images/footer-icons/mail.svg" alt="" />savoryseasons@yopmail.com</Link>
+                <Link href="tel:8742425485" className="contact-footer"><img
+                  src="assets/images/footer-icons/phone.svg" alt="" />8742425485</Link>
+                <Link href="#" className="contact-footer"><img src="assets/images/footer-icons/location.svg"
+                  alt="" />B-701 Blue Moon Tower, Gota, Ahmedabad</Link>
               </div>
             </div>
           </div>

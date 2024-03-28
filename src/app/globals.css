@@ -134,7 +134,7 @@ body {
 }
 
 .testi-head {
-  font-size: 1vw;
+  font-size: 20px;
   color: var(--secondary-color);
   font-family: heading;
   color: var(--primary-color);
@@ -152,7 +152,7 @@ body {
 }
 
 .testi-desc {
-  font-size: 0.8vw;
+  font-size: 18px;
   font-family: desc;
 }
 
@@ -203,69 +203,12 @@ body {
   }
 }
 
-.footer{
-  display: flex;
-  justify-content: space-between;
-  z-index: 111111;
+.heading-grids{
+  top: 60px;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
-.lets-connect, .quick {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  width: max-content;
-}
-.links-connect{
-  DISPLAY: flex;
-  GAP: 6VW;
-  WIDTH: 100%;
-  JUSTIFY-CONTENT: FLEX-END;
-}
-
-.connect-content {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.contact-footer {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  text-decoration: none;
-  color: var(--tertiary-color);
-  transition: color 0.3s;
-  font-size: 20px;}
-
-.contact-footer:hover {
-  color: var(--primary-color);
-}
-.logo-footer {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  width: 100%;
-}
-
-.logo-footer .logo-img {
-  width: 300px;
-}
-
-.social-media {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.social-media a,
-.social-icon {
-    height: 48px;
-    width: 48px;
-}
-
-.footer-desc{
-  font-size: 22px;
-  width: 65%;
-  font-family: desc;
-  color: var(--tertiary-color);
+.services-grid img{
+  cursor: pointer;
 }

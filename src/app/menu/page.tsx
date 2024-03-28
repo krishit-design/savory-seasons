@@ -48,8 +48,15 @@ const Menu = () => {
                 <img src='assets/images/menu-img/dish2.svg' />
               </div>
               <div className='content_offset'>
-                <h2>Subtitle</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a imperdiet sapien. Nunc vehicula lorem neque, eu rutrum sapien posuere ut. Nunc eget ullamcorper turpis. Sed in vehicula magna, vitae eleifend velit. Donec dui turpis, viverra vitae lobortis commodo, lobortis et ex.</p>
+              <div className="menu-items">
+                  <div className="heading-content">
+                    <h3>Sweets and Deserts</h3>
+                  </div>
+                  <div className="desc-content">
+                    <p>Gulab Jamun</p>
+                    <p>Icecream</p>
+                  </div>
+                </div>
               </div>
               <div className="menu-content">
                 <h1>Khushiyon ka Thali - 300</h1>
@@ -82,15 +89,7 @@ const Menu = () => {
                     <p>3 Butter Roti</p>
                   </div>
                 </div>
-                <div className="menu-items">
-                  <div className="heading-content">
-                    <h3>Sweets and Deserts</h3>
-                  </div>
-                  <div className="desc-content">
-                    <p>Gulab Jamun</p>
-                    <p>Icecream</p>
-                  </div>
-                </div>
+               
               </div>
             </div>
           </div>
