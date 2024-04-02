@@ -7,6 +7,7 @@ import { Spotlight } from "../components/ui/Spotlight";
 import { Tabs } from "../components/ui/tabs";
 import { GeminiEffect } from "../components/ui/gemini-effect";
 import { BackgroundBeams } from "../components/ui/background-beams";
+import Link from "next/link";
 
 
 export function SpotlightName() {
@@ -151,13 +152,13 @@ export function TabsServices() {
               <div className="content-desc">
                 <div className="desc">Our job is to make you look good. From office lunches to large-scale corporate events, we’ve made our business out of making your business shine.</div>
                 <button className="linkWrap">
-                  <a href="" className="cta style-9">
+                  <Link href="/service" className="cta style-9">
                     <span>Learn More</span>
                     <svg width="20px" height="12px" viewBox="0 0 13 10">
                       <path d="M1,5 L11,5"></path>
                       <polyline points="8 1 12 5 8 9"></polyline>
                     </svg>
-                  </a>
+                  </Link>
                 </button>
               </div>
             </div>
@@ -176,13 +177,13 @@ export function TabsServices() {
             <div className="content-desc">
               <div className="desc">We sweat the small stuff, so you don’t have to. For all of life’s special occasions, we give your anniversary, shower, or birthday party the attention it deserves, allowing you to focus on being present with your guests!</div>
               <button className="linkWrap">
-                <a href="#" className="cta style-9">
+                <Link href="/service" className="cta style-9">
                   <span>Learn More</span>
                   <svg width="20px" height="12px" viewBox="0 0 13 10">
                     <path d="M1,5 L11,5"></path>
                     <polyline points="8 1 12 5 8 9"></polyline>
                   </svg>
-                </a>
+                </Link>
               </button>
             </div>
           </div>
@@ -200,13 +201,13 @@ export function TabsServices() {
             <div className="content-desc">
               <div className="desc">The most important day of your life, is ours too. Your wedding should be the ultimate celebration of your relationship, and our team of experts guide you through the process, offering peace of mind and a remarkable experience.</div>
               <button className="linkWrap">
-                <a href="#" className="cta style-9">
+                <Link href="/service" className="cta style-9">
                   <span>Learn More</span>
                   <svg width="20px" height="12px" viewBox="0 0 13 10">
                     <path d="M1,5 L11,5"></path>
                     <polyline points="8 1 12 5 8 9"></polyline>
                   </svg>
-                </a>
+                </Link>
               </button>
             </div>
           </div>

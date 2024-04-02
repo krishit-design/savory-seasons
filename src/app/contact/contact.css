@@ -39,3 +39,7 @@ button {
     border-color: #6b7280 !important;
     border-width: 0px !important;
 }
+
+input{
+    background: #383838;
+}

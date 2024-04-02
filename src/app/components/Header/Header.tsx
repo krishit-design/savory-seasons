@@ -8,10 +8,10 @@ import { usePathname } from 'next/navigation'
 function Header() {
     const pathname = usePathname()
     return (
-        <>
-            <div className="logo">
+        <>  
+            <Link href={'/'} className="logo">
                 <img src="assets/images/logo-ss.svg" alt="" />
-            </div>
+            </Link>
             <nav>
                 <div className="navigation">
                     <li>

@@ -1,25 +1,67 @@
 "use client";
-import React from "react";
+import React, { ChangeEvent, FormEvent, useState } from "react";
 import { Label } from "../components/ui/label";
 import { Input } from "../components/ui/input";
 import { cn } from "@/utils/cn";
 import Header from '../components/Header/Header';
 import { PinContainer } from "../components/ui/3d-pin";
 import { HoverEffect } from "../components/ui/card-hover-effect";
-import "./contact.css"
-
-import {
-  IconBrandGithub,
-  IconBrandGoogle,
-  IconBrandOnlyfans,
-} from "@tabler/icons-react";
+import "./contact.css";
 import { BackgroundBeamsFooter } from "../components/Footer/footer";
 
 const contact = () => {
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    console.log("Form submitted");
+  // const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  //   e.preventDefault();
+  //   console.log("Form submitted");
+  // };
+
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    mobileNumber: '',
+    message: '',
+  });
+
+  // Function to update state on form input change
+  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
+
+  // Function to handle form submission
+  const handleSubmit = async (e:FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    try {
+      const response = await fetch('http://192.168.1.103:8086/api/Contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+  
+      if (response.ok) {
+        // Handle success - maybe clear the form or show a success message
+        setFormData({
+          firstName: '',
+          lastName: '',
+          email: '',
+          mobileNumber: '',
+          message: '',
+        });
+        alert('Message sent successfully!');
+      } else {
+        // Handle errors - maybe show an error message
+        const errorMessage = await response.text(); 
+        alert('Failed to send message.');
+      }
+    } catch (error) {
+      console.error('Failed to send message:', error);
+      // Handle errors - maybe show an error message
+      alert('Failed to send message.');
+    }
+  };
+  
   return (
     <>
     <div className="h-[100%] w-full bg-black bg-grid-black/[0] bg-grid-white/[0.025]">
@@ -34,29 +76,29 @@ const contact = () => {
             We're delighted to hear from you. Whether you have a question, need assistance, or just want to say hello, we're here to help. Please feel free to reach out to us by filling out the form below. Your message is important to us, and we'll do our best to respond as promptly as possible.
             </p>
 
-            <form className="my-8">
+            <form className="my-8" onSubmit={handleSubmit}>
               <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
                 <LabelInputContainer>
                   <Label htmlFor="firstname">First name</Label>
-                  <Input className="bc-zinc" id="firstname" placeholder="Tyler" type="text" />
+                  <Input className="bc-zinc" id="firstname" name="firstName" placeholder="First Name" type="text" required  value={formData.firstName}  onChange={handleChange} />
                 </LabelInputContainer>
                 <LabelInputContainer>
                   <Label htmlFor="lastname">Last name</Label>
-                  <Input className="bc-zinc" id="lastname" placeholder="Durden" type="text" />
+                  <Input className="bc-zinc" id="lastname" name="lastName" placeholder="Last Name" type="text" required  value={formData.lastName}  onChange={handleChange} />
                 </LabelInputContainer>
               </div>
               <LabelInputContainer className="mb-4">
                 <Label htmlFor="email">Email Address</Label>
-                <Input className="bc-zinc" id="email" placeholder="projectmayhem@fc.com" type="email" />
+                <Input className="bc-zinc" id="email" name="email" placeholder="Mail ID" type="email" required  value={formData.email}  onChange={handleChange} />
               </LabelInputContainer>
               <LabelInputContainer className="mb-4">
                 <Label htmlFor="password">Mobile Number</Label>
-                <Input className="bc-zinc" id="number" placeholder="9898989878" type="number" />
+                <Input className="bc-zinc" id="number" name="mobileNumber" placeholder="Your Number" type="number" required  value={formData.mobileNumber}  onChange={handleChange} />
               </LabelInputContainer>
               <LabelInputContainer className="mb-8">
                 <Label htmlFor="message">Message</Label>
                 <textarea className="bc-zinc rounded-md"
-                  id="message"
+                  id="message" name="message" value={formData.message}  onChange={handleChange}
                 />
               </LabelInputContainer>
 
@@ -145,7 +187,7 @@ export const projects = [
     link: "/",
   },
   {
-    title: "Twitter",
+    title: "X ( Twitter )",
     image: "assets/images/footer-icons/x.svg",
     description:
       "Breaking News: Be the first to know about our latest product launches, promotions, and updates.",
