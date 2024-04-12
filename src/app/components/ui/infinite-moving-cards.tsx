@@ -2,7 +2,7 @@ import React from 'react';
 
 function InfiniteMovingCards() {
   return (
-    <section className="padding-sec max-w-7xl w-100">
+    <section className="moving-cards padding-sec max-w-7xl w-100">
       <div className="testimonial">
         <div className="sec-heading-div pt-20">
           <h1 className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">

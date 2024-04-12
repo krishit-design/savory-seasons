@@ -65,6 +65,7 @@ module.exports = {
       );
     },
   ],
+  
 };
 
 function addVariablesForColors({ addBase, theme }: any) {

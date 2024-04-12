@@ -12,7 +12,7 @@ import Link from "next/link";
 
 export function SpotlightName() {
   return (
-    <div className="h-[100vh] pt-30 pb-30 w-full rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
+    <div className="spotlight-light pt-30 pb-30 w-full rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
       <Spotlight
         className="-top-40 left-0 md:left-60 md:-top-20"
         fill="white"
@@ -21,7 +21,7 @@ export function SpotlightName() {
         <h1 className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
           Welcome to <br /> Savory Seasons
         </h1>
-        <p className="mt-4 font-normal text-base text-neutral-300 max-w-lg text-center mx-auto">
+        <p className="mt-4 font-normal text-lg text-neutral-300 max-w-lg text-center mx-auto">
           At Savory Seasons, we believe that every event is a unique celebration of taste, and we are here to turn your moments into memories through the art of culinary excellence. Established with a passion for creating delightful culinary experiences, Savory Seasons has been a trusted name in the catering industry.
           
         </p>
@@ -131,11 +131,11 @@ export const products = [
 
 export function TabsServices() {
   // const router = useRouter();
-  <div className=" p-4 max-w-7xl  mx-auto relative z-10  w-full pt-20 md:pt-0">
-    <h1 className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
-      Making Every <br /> Experience Magical
-    </h1>
-  </div>
+  // <div className=" p-4 max-w-7xl  mx-auto relative z-10  w-full pt-20 md:pt-0">
+  //   <h1 className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
+  //     Making Every <br /> Experience Magical
+  //   </h1>
+  // </div>
 
   const tabs = [
     {
@@ -217,7 +217,7 @@ export function TabsServices() {
   ];
 
   return (
-    <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full  items-start justify-start my-40">
+    <div className="tabs-container [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full  items-start justify-start my-40">
       <div className=" p-4 max-w-7xl  mx-auto relative z-10  w-full pt-20 md:pt-0">
         <h1 className="text-4xl md:text-7xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
           Our Services

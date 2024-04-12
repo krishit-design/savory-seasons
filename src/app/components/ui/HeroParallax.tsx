@@ -57,7 +57,7 @@ export const HeroParallax = ({
   return (
     <div
       ref={ref}
-      className="h-[300vh] py-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+      className="parallax-container py-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
     >
       <Header />
       <motion.div
@@ -104,10 +104,10 @@ export const HeroParallax = ({
 export const Header = () => {
   return (
     <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0">
-      <h1 className="text-2xl md:text-7xl font-bold dark:text-black white-color-text">
+      <h1 className="text-2xl lg:text-7xl md:text-7xl font-bold dark:text-black white-color-text">
       Explore Our Culinary <br /> Masterpieces
       </h1>
-      <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200 white-color-text">
+      <p className="max-w-2xl 2xl:text-2xl text-base md:text-xl mt-8 dark:text-neutral-200 white-color-text">
       Immerse yourself in a visual feast as you glide through our assets/images, each
                                     image capturing the essence of our diverse and delectable offerings. From
                                     mouthwatering appetizers to decadent desserts, every dish is a testament to our
@@ -137,7 +137,7 @@ export const ProductCard = ({
         y: -20,
       }}
       key={product.title}
-      className="group/product h-96 w-[30rem] relative flex-shrink-0"
+      className="group/product parallax-width parallax-height relative flex-shrink-0"
     >
       <Link
         href={product.link}
@@ -147,7 +147,7 @@ export const ProductCard = ({
           src={product.thumbnail}
           height="600"
           width="600"
-          className="object-cover object-left-top absolute h-full w-full inset-0"
+          className="object-cover object-left-top absolute h-full w-full inset-0 parallax-image"
           alt={product.title}
         />
       </Link>

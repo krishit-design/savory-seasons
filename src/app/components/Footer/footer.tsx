@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export function BackgroundBeamsFooter() {
     return (
-      <div className="h-[100%] pt-4 pb-4 bg-black relative flex flex-col justify-center antialiased pointer-events-auto">
+      <div className="height-100 pt-4 pb-4 bg-black relative flex flex-col justify-center antialiased pointer-events-auto">
         <div className="max-w-7xl w-full mx-auto p-4 footer">
           <div className="logo-footer">
             <img className="logo-img" src="assets/images/logo-ss.svg" alt="" />

@@ -23,6 +23,9 @@ const contact = () => {
     message: '',
   });
 
+  const [emailError, setEmailError] = useState('');
+
+
   // Function to update state on form input change
   const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -31,8 +34,9 @@ const contact = () => {
   // Function to handle form submission
   const handleSubmit = async (e:FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setEmailError('');
     try {
-      const response = await fetch('http://192.168.1.103:8086/api/Contact', {
+      const response = await fetch('https://localhost:7125/api/Contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -60,6 +64,13 @@ const contact = () => {
       // Handle errors - maybe show an error message
       alert('Failed to send message.');
     }
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!formData.email || !emailPattern.test(formData.email)) {
+      setEmailError('Please enter a valid email address.');
+      return;
+    }
+
   };
   
   return (
@@ -89,7 +100,8 @@ const contact = () => {
               </div>
               <LabelInputContainer className="mb-4">
                 <Label htmlFor="email">Email Address</Label>
-                <Input className="bc-zinc" id="email" name="email" placeholder="Mail ID" type="email" required  value={formData.email}  onChange={handleChange} />
+                <Input  className={`bc-zinc ${emailError ? 'border-red-500' : ''}`} id="email" name="email" placeholder="Mail ID" type="email" required  value={formData.email}  onChange={handleChange} />
+                {emailError && <p className="text-red-500 text-sm">{emailError}</p>}
               </LabelInputContainer>
               <LabelInputContainer className="mb-4">
                 <Label htmlFor="password">Mobile Number</Label>
@@ -196,3 +208,7 @@ export const projects = [
 ];
 
 export default contact;
+
+function setEmailError(arg0: string) {
+  throw new Error("Function not implemented.");
+}

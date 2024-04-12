@@ -40,11 +40,28 @@ body {
       rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
   font-family: desc !important;
 }
-.white-color-text{
+
+.spotlight-light {
+  height: 100vh;
+}
+
+.height-100vh {
+  height: 100vh;
+}
+
+.height-100 {
+  height: 100%;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.white-color-text {
   color: #fff;
 }
 
-.padding-sec{
+.padding-sec {
   width: 100%;
 }
 
@@ -178,37 +195,135 @@ body {
   backdrop-filter: blur(15px);
 }
 
-.testi-rating{
+.testi-rating {
   display: flex;
   justify-content: center;
 }
 
+.parallax-container {
+  height: 300vh;
+}
+
+.parallax-image {
+  height: 380px;
+  width: 500px;
+}
+
+.parallax-height {
+  height: 24rem;
+}
+
+.parallax-width {
+  width: 30rem;
+}
+
+.tabs-container {
+  height: 40rem;
+}
+
+.carousel-container{
+  display: none;
+}
+
 @keyframes marqueeTop {
   0% {
-      top: 0;
+    top: 0;
   }
 
   100% {
-      top: -100%;
+    top: -100%;
   }
 }
 
 @keyframes marqueeBottom {
   0% {
-      top: -100%;
+    top: -100%;
   }
 
   100% {
-      top: 0;
+    top: 0;
   }
 }
 
-.heading-grids{
+.heading-grids {
   top: 60px;
   left: 50%;
   transform: translate(-50%, 0);
 }
 
-.services-grid img{
+.services-grid img {
   cursor: pointer;
+}
+
+@media only screen and (max-width: 786px) {
+
+  .spotlight-light {
+    height: 500px;
+  }
+
+  .parallax-container {
+    height: 230vh;
+  }
+
+  .parallax-image {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+  }
+
+  .parallax-height {
+    height: 15rem;
+  }
+
+  .parallax-width {
+    width: 15rem;
+  }
+
+  .tabs-container {
+    height: 65rem;
+    padding: 0 10px;
+  }
+
+  .tabs-button{
+    justify-content: center;
+    padding: 20px 0;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .content img{
+    height: 375px !important;
+    width: 100% !important;
+  }
+
+  .text-xs{
+    font-size: 1rem;
+    padding: 0 10px;
+    letter-spacing: 1px;
+  }
+
+  .moving-cards{
+    display: none;
+  }
+
+  .carousel-container{
+    padding: 150px 15px 0 15px;
+    display: block;
+  }
+
+  .testi-box{
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .gemini-svg{
+    top: -8rem !important;
+  }
+  
+  .links-connect{
+    flex-direction: column;
+  }
 }

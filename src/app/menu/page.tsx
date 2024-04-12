@@ -2,10 +2,11 @@
 import React from 'react';
 import "./menu.css";
 import Header from '../components/Header/Header';
+import Carousel from '../components/ui/testimonial-slider';
 
 const Menu = () => {
   return (
-    
+     
     <div className="h-[100vh] w-full bg-black dark:bg-grid-black/[0] bg-grid-white/[0.025]">
       <Header/>
       <div className='pages'>
@@ -228,6 +229,7 @@ const Menu = () => {
           </div>
         </div>
       </div>
+      <Carousel/>
     </div>
   )
 }
