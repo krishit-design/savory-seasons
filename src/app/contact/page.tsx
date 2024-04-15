@@ -79,7 +79,7 @@ const contact = () => {
       <Header />
       <div className="container contact">
         <div className="contact-content">
-          <div className="w-[80%] rounded-none md:rounded-2xl p-4 md:p-8 shadow-input border border-white/[0.1] bg-black dark:bg-black">
+          <div className="form-container rounded-none md:rounded-2xl p-4 md:p-8 shadow-input border border-white/[0.1] bg-black dark:bg-black">
             <h2 className="font-bold text-xl text-neutral-100 dark:text-neutral-100">
               Welcome to Savory Seasons
             </h2>
@@ -208,7 +208,3 @@ export const projects = [
 ];
 
 export default contact;
-
-function setEmailError(arg0: string) {
-  throw new Error("Function not implemented.");
-}

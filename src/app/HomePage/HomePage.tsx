@@ -44,7 +44,7 @@ export const products = [
     title: "Indian Dish",
     link: "",
     thumbnail:
-      "/assets/images/secOne-2.jpg"
+      "/assets/images/secOne-4.jpg"
   },
   {
     title: "Rice",

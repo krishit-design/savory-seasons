@@ -77,44 +77,37 @@ export const BackgroundBeams = React.memo(
             stroke="url(#paint0_radial_242_278)"
             strokeOpacity="0.05"
             strokeWidth="0.5"
-          ></path>
-
+          />
           {paths.map((path, index) => (
             <motion.path
-              key={`path-` + index}
+              key={`path-${index}`}
               d={path}
               stroke={`url(#linearGradient-${index})`}
               strokeOpacity="0.4"
               strokeWidth="0.5"
-            ></motion.path>
-          ))}
-          <defs>
-            {paths.map((path, index) => (
-              <motion.linearGradient
-                id={`linearGradient-${index}`}
-                x1="100%"
-                x2="100%"
-                y1="100%"
-                y2="100%"
-                key={`gradient-${index}`}
-                animate={{
-                  x1: ["0%", "100%"],
-                  x2: ["0%", "95%"],
-                  y1: ["0%", "100%"],
-                  y2: ["0%", `${93 + Math.random() * 8}%`],
-                }}
-                transition={{
+              initial={false}
+              animate={{
+                pathLength: [0, 1],
+                transition: {
                   duration: Math.random() * 10 + 10,
                   ease: "easeInOut",
                   repeat: Infinity,
                   delay: Math.random() * 10,
-                }}
+                },
+              }}
+            />
+          ))}
+          <defs>
+            {paths.map((path, index) => (
+              <linearGradient
+                id={`linearGradient-${index}`}
+                key={`gradient-${index}`}
               >
-                <stop stopColor="#18CCFC" stopOpacity="0"></stop>
-                <stop stopColor="#18CCFC"></stop>
-                <stop offset="32.5%" stopColor="#6344F5"></stop>
-                <stop offset="100%" stopColor="#AE48FF" stopOpacity="0"></stop>
-              </motion.linearGradient>
+                <stop offset="0%" stopColor="#18CCFC" stopOpacity="0" />
+                <stop offset="70%" stopColor="#18CCFC" />
+                <stop offset="80%" stopColor="#6344F5" />
+                <stop offset="100%" stopColor="#AE48FF" stopOpacity="0" />
+              </linearGradient>
             ))}
 
             <radialGradient

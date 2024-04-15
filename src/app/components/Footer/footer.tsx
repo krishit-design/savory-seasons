@@ -37,7 +37,7 @@ export function BackgroundBeamsFooter() {
               </h4>
               <div className="connect-content">
                 <Link href="mailto:savoryseasons@yopmail.com" className="contact-footer"><img
-                  src="assets/images/footer-icons/mail.svg" alt="" />savoryseasons@yopmail.com</Link>
+                  src="assets/images/footer-icons/mail.svg" alt="" />savoryseasons06@gmail.com</Link>
                 <Link href="tel:8742425485" className="contact-footer"><img
                   src="assets/images/footer-icons/phone.svg" alt="" />8742425485</Link>
                 <Link href="#" className="contact-footer"><img src="assets/images/footer-icons/location.svg"

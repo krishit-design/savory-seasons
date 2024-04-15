@@ -3,13 +3,14 @@ import React from 'react';
 import "./menu.css";
 import Header from '../components/Header/Header';
 import Carousel from '../components/ui/testimonial-slider';
+import MenuSlider from '../components/ui/menu-slider';
 
 const Menu = () => {
   return (
-     
+
     <div className="h-[100vh] w-full bg-black dark:bg-grid-black/[0] bg-grid-white/[0.025]">
-      <Header/>
-      <div className='pages'>
+      <Header />
+      <div className='pages menu-pages'>
         <input id='one' name='trigger' type='radio' />
         <input id='two' name='trigger' type='radio' />
         <input id='three' name='trigger' type='radio' />
@@ -40,7 +41,7 @@ const Menu = () => {
         <div className='pages_page'>
           <div className='pages_page__inner'>
             <div className='logoMenu'><img src="assets/images/logo-ss.svg" width="250px" alt="" /></div>
-            <div className='pagenumber'>2 3</div> 
+            <div className='pagenumber'>2 3</div>
             <div className='control'>
               <label htmlFor='one'></label>
             </div>
@@ -49,7 +50,7 @@ const Menu = () => {
                 <img src='assets/images/menu-img/dish2.svg' />
               </div>
               <div className='content_offset'>
-              <div className="menu-items">
+                <div className="menu-items">
                   <div className="heading-content">
                     <h3>Sweets and Deserts</h3>
                   </div>
@@ -71,13 +72,6 @@ const Menu = () => {
                     <p> Hara Bhara Kabab</p>
                   </div>
                 </div>
-                {/* <div className="menu-items">
-                  <div className="heading-content">
-                    <h3>Kababs</h3>
-                  </div>
-                  <div className="desc-content">
-                  </div>
-                </div> */}
                 <div className="menu-items">
                   <div className="heading-content">
                     <h3>Main Menu</h3>
@@ -90,7 +84,7 @@ const Menu = () => {
                     <p>3 Butter Roti</p>
                   </div>
                 </div>
-               
+
               </div>
             </div>
           </div>
@@ -118,10 +112,10 @@ const Menu = () => {
                   <span className='quo'>
                     <i>"</i>
                   </span>
-                  <span>This is a quote</span>
-                  <span>from someone</span>
-                  <span className='name'>Jamie Coulter</span>
-                  <span className='auth'>- Jcoulterdesign</span>
+                  <span>Great taste at an </span>
+                  <span>affordable price</span>
+                  <span className='name'>Amita Sharma</span>
+                  <span className='auth'>- NGO Coordinator</span>
                   <span className='quo'>"</span>
                 </h5>
               </div>
@@ -140,18 +134,33 @@ const Menu = () => {
             <div className='pagenumber'>4 5</div>
             <div className='content'>
               <div className="menu-content">
-                <h1>Dil Se Daawat</h1>
-                <p>Item</p>
-                <p>Item</p>
-                <p>Item</p>
-                <p>Item</p>
-                <p>Item</p>
-                <p>Item</p>
-
+                <h1>Dil Se Daawat - 500</h1>
+                <div className="menu-items">
+                  <div className="heading-content">
+                    <h3>Main Menu</h3>
+                  </div>
+                  <div className="desc-content">
+                    <p>Mocktails</p>
+                    <p>Soups * 4</p>
+                    <p>Chaats</p>
+                    <p>Manchurian</p>
+                    <p>Sabji * 3</p>
+                    <p>5 Butter Roti</p>
+                  </div>
+                </div>
+                <div className="menu-items">
+                  <div className="heading-content">
+                    <h3>Sweets and Deserts</h3>
+                  </div>
+                  <div className="desc-content">
+                    <p>Aamras / Rabdi - Jalebi</p>
+                    <p>Icecream * 2</p>
+                  </div>
+                </div>
               </div>
               <div className='content_center'>
-                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
-                <h6>Lorem ipsum dolor sit amet</h6>
+                <h4>Treat yourself to our top pick among these dishes </h4>
+                <h6>Our bestseller</h6>
               </div>
             </div>
             <div className='control'>
@@ -175,8 +184,8 @@ const Menu = () => {
             </div>
             <div className='content'>
               <div className='content_center right'>
-                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
-                <h6>Lorem ipsum dolor sit amet</h6>
+                <h4>Treat yourself to our top pick among these dishes </h4>
+                <h6>Our bestseller</h6>
               </div>
             </div>
             <div className='footer'>
@@ -192,18 +201,47 @@ const Menu = () => {
             <div className='logoMenu'><img src="assets/images/logo-ss.svg" width="250px" alt="" /></div>
             <div className='pagenumber'>6 7</div>
             <div className='content'>
-              <h1 className="content-head">Shandaar Swad Sargam</h1>
+              <h1 className="content-head">Shandaar Swad Sargam - 700</h1>
               <div className='content_section'>
-                <h2>Super</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a imperdiet sapien. Nunc vehicula lorem neque, eu rutrum sapien posuere ut. Nunc eget ullamcorper turpis. Sed in vehicula magna, vitae eleifend velit.</p>
+                <div className="menu-items">
+                  <div className="heading-content">
+                    <h3>Starter</h3>
+                  </div>
+                  <div className="desc-content">
+                    <p>Mocktails * 3</p>
+                    <p>Soups * 4</p>
+                    <p>Italian mini / Bread pizza</p>
+                    <p>Pasta * 2</p>
+                    <p>Chilly paneer / spring roll</p>
+                  </div>
+                </div>
               </div>
               <div className='content_section'>
-                <h2>Awesome</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a imperdiet sapien. Nunc vehicula lorem neque, eu rutrum sapien posuere ut. Nunc eget ullamcorper turpis. Sed in vehicula magna, vitae eleifend velit.</p>
+                <div className="menu-items">
+                  <div className="heading-content">
+                    <h3>Main Menu</h3>
+                  </div>
+                  <div className="desc-content">
+                    <p>Sabji * 3</p>
+                    <p>Roti/Naan * 4</p>
+                    <p>Dosa * 2</p> 
+                    <p>Rice</p>
+                    <p>Dal * 2</p>
+                    <p>Pulav * 2</p>
+                    <p>Colddrinks * 2</p>
+                  </div>
+                </div>
               </div>
               <div className='content_section'>
-                <h2>Great</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a imperdiet sapien. Nunc vehicula lorem neque, eu rutrum sapien posuere ut. Nunc eget ullamcorper turpis. Sed in vehicula magna.</p>
+              <div className="menu-items">
+                  <div className="heading-content">
+                    <h3>Sweets and Deserts</h3>
+                  </div>
+                  <div className="desc-content">
+                    <p>Aamras / Rabdi - Jalebi</p>
+                    <p>Icecream / Brownie</p>
+                  </div>
+                </div>
               </div>
             </div>
             <div className='control'>
@@ -229,7 +267,8 @@ const Menu = () => {
           </div>
         </div>
       </div>
-      <Carousel/>
+      {/* <Carousel/> */}
+      <MenuSlider />
     </div>
   )
 }
@@ -292,7 +331,7 @@ export default Menu;
 //           <option key={index} value={dish}>{dish}</option>
 //         ))}
 //       </select>
-//       {selectedDish !== "" && 
+//       {selectedDish !== "" &&
 //         <select value={selectedTopping} onChange={handleToppingChange}>
 //           <option value="">Select Topping</option>
 //           {dishes[selectedDish as keyof typeof dishes].map((topping, index) => (

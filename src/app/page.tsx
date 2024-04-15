@@ -6,7 +6,7 @@ import { TabsServices } from "./HomePage/HomePage";
 import { GeminiEffectMenu } from "./HomePage/HomePage";
 import InfiniteMovingCards from "./components/ui/infinite-moving-cards";
 import { BackgroundBeamsFooter } from "./components/Footer/footer";
-import Carousel from "./components/ui/testimonial-slider";
+import TestimonialSlider from "./components/ui/testimonial-slider";
 export default function Home() {
   return (
     <div>
@@ -23,9 +23,10 @@ export default function Home() {
         <GeminiEffectMenu />
       </div>
       <div className="h-[100%] w-full dark:bg-black dark:bg-grid-black/[0] bg-grid-white/[0.025] relative flex items-center justify-center">
-        {/* <MovingCards /> */}
+        
         <InfiniteMovingCards/>
-        <Carousel/>
+        
+        <TestimonialSlider />
       </div>
       <BackgroundBeamsFooter/>
     </div>
