@@ -12,11 +12,11 @@ export function BackgroundBeamsFooter() {
             <img className="logo-img" src="assets/images/logo-ss.svg" alt="" />
             <div className="footer-desc">Established with a passion for creating delightful culinary experiences, Savory Seasons has been a trusted name in the catering industry.</div>
             <div className="social-media">
-              <Link href="#"><img className="social-icon" src="assets/images/footer-icons/whatsapp.svg"
+              <Link href="https://web.whatsapp.com/" target="_blank"><img className="social-icon" src="assets/images/footer-icons/whatsapp.svg"
                 alt="" /></Link>
-              <Link href="#"><img className="social-icon" src="assets/images/footer-icons/instagram.svg"
+              <Link href="https://www.instagram.com/" target="_blank"><img className="social-icon" src="assets/images/footer-icons/instagram.svg"
                 alt="" /></Link>
-              <Link href="#"><img className="social-icon" src="assets/images/footer-icons/x.svg" alt="" /></Link>
+              <Link href="https://twitter.com/" target="_blank"><img className="social-icon" src="assets/images/footer-icons/x.svg" alt="" /></Link>
             </div>
           </div>
           <div className="links-connect">

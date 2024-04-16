@@ -238,6 +238,9 @@ body {
   border-radius: 1rem;
 }
 
+.multiStep Loader{
+  z-index: 11111111;
+}
 @keyframes marqueeTop {
   0% {
     top: 0;
@@ -294,13 +297,14 @@ body {
   }
 
   .tabs-container {
-    height: 65rem;
+    height: 58rem;
     padding: 0 10px;
   }
 
   .tabs-button{
     justify-content: center;
     padding: 20px 0;
+    overflow: hidden;
   }
 
   .content {
@@ -308,8 +312,21 @@ body {
   }
 
   .content img{
-    height: 375px !important;
+    height: 300px !important;
     width: 100% !important;
+  }
+
+  .tabs-container .content .desc{
+    font-size: 20px;
+  }
+
+  .content .cta:before{
+    height: 50px;
+    width: 50px;
+  }
+
+  .content .cta span{
+    font-size: 20px;
   }
 
   .text-xs{

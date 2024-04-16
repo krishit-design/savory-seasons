@@ -24,19 +24,31 @@ const contact = () => {
   });
 
   const [emailError, setEmailError] = useState('');
+  const [phoneError, setPhoneError] = useState('');
 
 
   // Function to update state on form input change
   const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+       // Regular expression pattern to validate email format
+       const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+       // Additional validation for email field to ensure it's a valid email address
+       if (name === "email" && !emailPattern.test(value)) {
+           setEmailError("Please enter a valid email address.");
+       } else {
+           setEmailError('');
+       }
   };
 
   // Function to handle form submission
   const handleSubmit = async (e:FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setEmailError('');
+    setPhoneError('');
     try {
-      const response = await fetch('https://localhost:7125/api/Contact', {
+      const response = await fetch('http://localhost:8081/Contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -65,11 +77,17 @@ const contact = () => {
       alert('Failed to send message.');
     }
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const phonePattern = /^\d{10}$/;
 
     if (!formData.email || !emailPattern.test(formData.email)) {
       setEmailError('Please enter a valid email address.');
       return;
     }
+
+    if (!formData.mobileNumber || !phonePattern.test(formData.mobileNumber)) {
+      setPhoneError('Phone number is not valid. Please enter a valid Phone number.');
+      return;
+  }
 
   };
   
@@ -83,32 +101,33 @@ const contact = () => {
             <h2 className="font-bold text-xl text-neutral-100 dark:text-neutral-100">
               Welcome to Savory Seasons
             </h2>
-            <p className="text-neutral-100 text-md mt-2 dark:text-neutral-100">
+            <p className="text-zinc-400 tracking-wider text-md mt-2 dark:text-neutral-100">
             We're delighted to hear from you. Whether you have a question, need assistance, or just want to say hello, we're here to help. Please feel free to reach out to us by filling out the form below. Your message is important to us, and we'll do our best to respond as promptly as possible.
             </p>
 
             <form className="my-8" onSubmit={handleSubmit}>
               <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
                 <LabelInputContainer>
-                  <Label htmlFor="firstname">First name</Label>
+                  <Label className="tracking-wider" htmlFor="firstname">First name</Label>
                   <Input className="bc-zinc" id="firstname" name="firstName" placeholder="First Name" type="text" required  value={formData.firstName}  onChange={handleChange} />
                 </LabelInputContainer>
                 <LabelInputContainer>
-                  <Label htmlFor="lastname">Last name</Label>
+                  <Label className="tracking-wider" htmlFor="lastname">Last name</Label>
                   <Input className="bc-zinc" id="lastname" name="lastName" placeholder="Last Name" type="text" required  value={formData.lastName}  onChange={handleChange} />
                 </LabelInputContainer>
               </div>
               <LabelInputContainer className="mb-4">
-                <Label htmlFor="email">Email Address</Label>
+                <Label className="tracking-wider" htmlFor="email">Email Address</Label>
                 <Input  className={`bc-zinc ${emailError ? 'border-red-500' : ''}`} id="email" name="email" placeholder="Mail ID" type="email" required  value={formData.email}  onChange={handleChange} />
                 {emailError && <p className="text-red-500 text-sm">{emailError}</p>}
               </LabelInputContainer>
               <LabelInputContainer className="mb-4">
-                <Label htmlFor="password">Mobile Number</Label>
-                <Input className="bc-zinc" id="number" name="mobileNumber" placeholder="Your Number" type="number" required  value={formData.mobileNumber}  onChange={handleChange} />
+                <Label className="tracking-wider" htmlFor="password">Mobile Number</Label>
+                <Input className={`bc-zinc ${phoneError ? 'border-red-500' : ''}`} id="number" name="mobileNumber" placeholder="Your Number" type="text" required  value={formData.mobileNumber}  onChange={handleChange} />
+                {phoneError && <p className="text-red-500 text-sm">Phone number is not valid. Please enter a valid Phone number. </p>}
               </LabelInputContainer>
               <LabelInputContainer className="mb-8">
-                <Label htmlFor="message">Message</Label>
+                <Label className="tracking-wider" htmlFor="message">Message</Label>
                 <textarea className="bc-zinc rounded-md"
                   id="message" name="message" value={formData.message}  onChange={handleChange}
                 />
@@ -156,7 +175,7 @@ const AnimatedPinDemo = () => {
             Locate Us
           </h3>
           <div className="text-base !m-0 !p-0 font-normal">
-            <span className="text-slate-500 ">
+            <span className="text-zinc-400 tracking-wider">
             Visit us today and discover why we're a preferred destination in Ahmedabad. We look forward to welcoming you!
             </span>
           </div>
@@ -189,22 +208,32 @@ export const projects = [
     image: "assets/images/footer-icons/whatsapp.svg",
     description:
       "Get in touch with our team instantly via WhatsApp. Whether you have questions, need assistance, or just want to chat, we're here to help.",
-    link: "/",
+    link: "https://web.whatsapp.com",
+    id: "whatsapp",
+    name: "Whatsapp"
   },
   {
     title: "Instagram",
     image: "assets/images/footer-icons/instagram.svg",
     description:
       "Stay connected with our latest updates, behind-the-scenes glimpses, and exclusive content by following us on Instagram.",
-    link: "/",
+    link: "https://www.instagram.com/",
+    id: "instagram",
+    name: "Instagram"
   },
   {
     title: "X ( Twitter )",
     image: "assets/images/footer-icons/x.svg",
     description:
       "Breaking News: Be the first to know about our latest product launches, promotions, and updates.",
-    link: "/",
+    link: "http://twitter.com/",
+    id: "twitter",
+    name: "X"
   },
 ];
 
 export default contact;
+
+function setPhoneError(arg0: string) {
+  throw new Error("Function not implemented.");
+}

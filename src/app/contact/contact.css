@@ -28,6 +28,7 @@ textarea:focus-visible{
   
 textarea{
     color: #fff;
+    padding: 8px 12px;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

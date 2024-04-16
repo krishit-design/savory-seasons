@@ -43,6 +43,8 @@
 
   .items{
     font-size: 16px;
+    color: #a1a1aa;
+    letter-spacing: 1px;
   }
   
   .author {
@@ -78,3 +80,9 @@
   .items-content {
     margin-bottom: 20px;
   }
+
+  .buttonSlider {
+    padding: 10px !important;
+    border-radius: 10px;
+  }
+  

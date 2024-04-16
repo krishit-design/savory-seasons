@@ -104,11 +104,11 @@ export const HeroParallax = ({
 export const Header = () => {
   return (
     <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0">
-      <h1 className="text-2xl lg:text-7xl md:text-7xl font-bold dark:text-black white-color-text">
+      <h1 className="text-2xl lg:text-7xl md:text-7xl tracking-wider font-bold dark:text-black white-color-text">
       Explore Our Culinary <br /> Masterpieces
       </h1>
-      <p className="max-w-2xl 2xl:text-2xl text-base md:text-xl mt-8 dark:text-neutral-200 white-color-text">
-      Immerse yourself in a visual feast as you glide through our assets/images, each
+      <p className="max-w-2xl 2xl:text-2xl text-base md:text-xl mt-8 tracking-wider dark:text-neutral-200 white-color-text">
+      Immerse yourself in a visual feast as you glide through our images, each
                                     image capturing the essence of our diverse and delectable offerings. From
                                     mouthwatering appetizers to decadent desserts, every dish is a testament to our
                                     commitment to quality and innovation.

@@ -66,8 +66,8 @@ function TestimonialSlider() {
         <p className={styles.author}>- {testimonials[current].author}, {testimonials[current].position}</p>
       </div>
       <div className={styles.buttons}>
-        <button onClick={prevTestimonial}>Previous</button>
-        <button onClick={nextTestimonial}>Next</button>
+        <button className={styles.buttonSlider} onClick={prevTestimonial}>Previous</button>
+        <button className={styles.buttonSlider} onClick={nextTestimonial}>Next</button>
       </div>
      </div>
     </div>

@@ -8,7 +8,7 @@ import MenuSlider from '../components/ui/menu-slider';
 const Menu = () => {
   return (
 
-    <div className="h-[100vh] w-full bg-black dark:bg-grid-black/[0] bg-grid-white/[0.025]">
+    <div className="h-[100%] w-full bg-black dark:bg-grid-black/[0] bg-grid-white/[0.025]">
       <Header />
       <div className='pages menu-pages'>
         <input id='one' name='trigger' type='radio' />

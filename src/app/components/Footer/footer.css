@@ -1,78 +1,101 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
 
-.footer{
-    display: flex;
-    justify-content: space-between;
-    z-index: 111111;
-  }
-  
-  .lets-connect, .quick {
-    display: flex;
+.lets-connect,
+.quick {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.links-connect {
+  DISPLAY: flex;
+  GAP: 6VW;
+  WIDTH: 100%;
+  JUSTIFY-CONTENT: FLEX-END;
+}
+
+.connect-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-footer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--tertiary-color);
+  transition: color 0.3s;
+  font-size: 20px;
+}
+
+.contact-footer:hover {
+  color: var(--primary-color);
+}
+
+.logo-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.logo-footer .logo-img {
+  width: 300px;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.social-media a,
+.social-icon {
+  height: 48px;
+  width: 48px;
+}
+
+.footer-desc {
+  font-size: 22px;
+  width: 65%;
+  font-family: desc;
+  color: var(--tertiary-color);
+}
+
+@media screen and (max-width: 1080px) {
+  .footer {
     flex-direction: column;
-    gap: 20px;
-    width: 100%;
+    gap: 40px;
   }
-  .links-connect{
-    DISPLAY: flex;
-    GAP: 6VW;
-    WIDTH: 100%;
-    JUSTIFY-CONTENT: FLEX-END;
+
+  .links-connect {
+    justify-content: flex-start;
   }
-  
-  .connect-content {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+}
+
+@media screen and (max-width: 786px) {
+  .footer {
+    padding-bottom: 60px;
   }
-  
+
+  .footer-desc {
+    font-size: 20px;
+  }
+
   .contact-footer {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    text-decoration: none;
-    color: var(--tertiary-color);
-    transition: color 0.3s;
-    font-size: 20px;}
-  
-  .contact-footer:hover {
-    color: var(--primary-color);
+    font-size: 18px;
   }
-  .logo-footer {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-  }
-  
-  .logo-footer .logo-img {
-    width: 300px;
-  }
-  
-  .social-media {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-  }
-  
+
   .social-media a,
   .social-icon {
-      height: 48px;
-      width: 48px;
+    height: 40px;
+    width: 40px;
   }
-  
-  .footer-desc{
-    font-size: 22px;
-    width: 65%;
-    font-family: desc;
-    color: var(--tertiary-color);
-  }
-
-  @media screen and (max-width: 1080px) {
-    .footer{
-        flex-direction: column;
-        gap: 40px;
-    }
-
-    .links-connect{
-        justify-content: flex-start;
-    }
-  }
+}

@@ -25,7 +25,7 @@ export const GeminiEffect = ({
       <p className="text-4xl md:text-7xl font-normal pb-4 text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-100 to-neutral-300">
         {title || `Explore Our Menu`}
       </p>
-      <p className="text-lg md:text-xl font-normal text-center text-neutral-400 mt-4 max-w-lg mx-auto">
+      <p className="text-lg md:text-xl font-normal text-center text-zinc-400 mt-4 max-w-lg mx-auto">
         {description ||
           `At Savory Seasons, we take pride in offering a diverse and delectable menu crafted with passion and precision. Each item is a symphony of flavors, carefully curated to tantalize your taste buds and leave you craving for more. From savory starters to indulgent desserts, our menu is a celebration of culinary excellence.`}
       </p>
