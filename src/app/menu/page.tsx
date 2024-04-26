@@ -1,15 +1,153 @@
-"use client";
-import React from 'react';
+"use client"
+import React, { useState } from 'react';
 import "./menu.css";
 import Header from '../components/Header/Header';
-import Carousel from '../components/ui/testimonial-slider';
-import MenuSlider from '../components/ui/menu-slider';
+import Carousel from '../components/ui/testimonial-slider'; // Assuming this is correct (replace if needed)
+import MenuSlider from '../components/ui/menu-slider'; // Assuming this is correct (replace if needed)
+
+interface MenuItem {
+  name: string;
+  price: number;
+  quantity: number;
+}
 
 const Menu = () => {
+  // State variables
+  const [cart, setCart] = useState<MenuItem[]>([]);
+  const [isCartOpen, setIsCartOpen] = useState<boolean>(false);
+
+  // Functions for cart management
+  const addToCart = (itemName: string, itemPrice: number) => {
+    const existingItemIndex = cart.findIndex(item => item.name === itemName);
+
+    if (existingItemIndex !== -1) {
+      const updatedCart = [...cart];
+      updatedCart[existingItemIndex].quantity += 1;
+      setCart(updatedCart);
+    } else {
+      const newItem: MenuItem = {
+        name: itemName,
+        price: itemPrice,
+        quantity: 1
+      };
+      setCart([...cart, newItem]);
+    }
+  };
+
+  const removeFromCart = (itemName: string) => {
+    const updatedCart = cart.map(item =>
+      item.name === itemName ? { ...item, quantity: item.quantity - 1 } : item
+    );
+    setCart(updatedCart.filter(item => item.quantity > 0));
+  };
+
+  const toggleCart = () => {
+    setIsCartOpen(!isCartOpen);
+  };
+
+  const calculateTotal = () => {
+    return cart.reduce((total, item) => total + item.price * item.quantity, 0);
+  };
+
+  // Function for sending cart data to admin (consider serverless API if applicable)
+  const sendCartDataToAdmin = async () => {
+    try {
+      // Check if user is authenticated (you might need to implement authentication logic)
+      const token = localStorage.getItem('token');
+      const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
+      if (!isLoggedIn) {
+        console.error('User is not authenticated');
+        return;
+      }
+  
+      // Retrieve user details from local storage
+      const username = localStorage.getItem('UserNameOrEmail');
+  
+      // Calculate total price
+      const totalPrice = calculateTotal();
+  
+      // Prepare data to send (consider security and appropriate data structure)
+      console.log('Cart items:', cart);
+      
+        const data = cart.length === 1
+        ? {
+            dishName: cart[0].name,
+            quantity: cart[0].quantity,
+            price: cart[0].price * cart[0].quantity
+          }
+        : null;
+      
+  
+      // Send data to the admin API endpoint
+      const response = await fetch('http://192.168.1.103:8081/api/addOrder', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${token}`
+        },
+        body: JSON.stringify(data)
+      });
+  
+      if (response.ok) {
+        console.log('Data sent to admin successfully', data);
+        // Handle successful submission (e.g., clear cart, show confirmation message)
+      } else {
+        console.error('Error sending data to admin:', response.statusText);
+        // Handle API errors (e.g., display error message to user)
+      }
+    } catch (error) {
+      console.error('Error sending data to admin:', error);
+      // Handle unexpected errors (e.g., network errors)
+    }
+  };
+
   return (
 
-    <div className="h-[100%] w-full bg-black dark:bg-grid-black/[0] bg-grid-white/[0.025]">
+    <div className="h-[100vh] w-full bg-black dark:bg-grid-black/[0] bg-grid-white/[0.025]">
       <Header />
+      <div className="cart-icon" onClick={toggleCart}>
+        <img src="assets/images/cart.svg" alt="" />
+        {cart.length > 0 && <span className="cart-count"></span>}
+      </div>
+      {cart.length > 0 && !isCartOpen && <div className="cart-notification-dot"></div>}
+      {/* Render cart content as a popup */}
+      {isCartOpen && (
+        <div className="cart-popup">
+          <h2>Cart:</h2>
+          <div className='item-list'>
+            {cart.map((item, index) => (
+              <h4 className='cart-item' key={index}>
+                <span className='item-name'>{item.name}</span>
+                <span className='item-price'>₹{item.price * item.quantity}</span>
+                <span className='add-remove-quantity'>
+                  <button onClick={() => addToCart(item.name, item.price)}>+</button>
+                  {item.quantity}
+                  <button onClick={() => removeFromCart(item.name)}>-</button>
+                </span>
+              </h4>
+            ))}
+            {cart.length > 0 && (
+              <div>
+                <h3 className='item-total'>Total: ₹{calculateTotal()}</h3>
+                <button className='order-btn' onClick={sendCartDataToAdmin}>Order Now</button>
+              </div>
+            )}
+          </div>
+
+        </div>
+      )}
+
+      {/* {isCartOpen && (
+        <div className="cart-popup">
+          <h2>My Cart:</h2>
+          <div>
+            {cart.map((item, index) => (
+              <h4 key={index}>{item.name} - ₹{item.price}</h4>
+            ))}
+          </div>
+          <h3>Total: ₹{calculateTotal()}</h3>
+        </div>
+      )} */}
       <div className='pages menu-pages'>
         <input id='one' name='trigger' type='radio' />
         <input id='two' name='trigger' type='radio' />
@@ -61,7 +199,10 @@ const Menu = () => {
                 </div>
               </div>
               <div className="menu-content">
-                <h1>Khushiyon ka Thali - 300</h1>
+                <div className="heading-add">
+                  <h1>Taste Trio - 300</h1>
+                  <button onClick={() => addToCart("Taste Trio", 300)}>Add to cart</button>
+                </div>
                 <div className="menu-items">
                   <div className="heading-content">
                     <h3>Starters</h3>
@@ -134,7 +275,11 @@ const Menu = () => {
             <div className='pagenumber'>4 5</div>
             <div className='content'>
               <div className="menu-content">
-                <h1>Dil Se Daawat - 500</h1>
+
+                <div className="heading-add">
+                  <h1>Flavor Fusion - 500</h1>
+                  <button onClick={() => addToCart("Flavor Fusion", 500)}>Add to cart</button>
+                </div>
                 <div className="menu-items">
                   <div className="heading-content">
                     <h3>Main Menu</h3>
@@ -201,7 +346,12 @@ const Menu = () => {
             <div className='logoMenu'><img src="assets/images/logo-ss.svg" width="250px" alt="" /></div>
             <div className='pagenumber'>6 7</div>
             <div className='content'>
-              <h1 className="content-head">Shandaar Swad Sargam - 700</h1>
+              <div className="content-head">
+                <div className="heading-add">
+                  <h1>Feast Medley - 800</h1>
+                  <button onClick={() => addToCart("Feast Medley", 800)}>Add to cart</button>
+                </div>
+              </div>
               <div className='content_section'>
                 <div className="menu-items">
                   <div className="heading-content">
@@ -224,7 +374,7 @@ const Menu = () => {
                   <div className="desc-content">
                     <p>Sabji * 3</p>
                     <p>Roti/Naan * 4</p>
-                    <p>Dosa * 2</p> 
+                    <p>Dosa * 2</p>
                     <p>Rice</p>
                     <p>Dal * 2</p>
                     <p>Pulav * 2</p>
@@ -233,7 +383,7 @@ const Menu = () => {
                 </div>
               </div>
               <div className='content_section'>
-              <div className="menu-items">
+                <div className="menu-items">
                   <div className="heading-content">
                     <h3>Sweets and Deserts</h3>
                   </div>

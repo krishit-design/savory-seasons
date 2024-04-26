@@ -33,6 +33,10 @@
   --tertiary-color-light: rgba(218, 226, 213, 0.1);
 }
 
+input {
+  font-family:'Times New Roman', Times, serif;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(to bottom,
@@ -384,4 +388,52 @@ body {
     width: 100%;
   }
   
+}
+
+.login_info{
+  position: fixed;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  top: 28px;
+    right: 110px;
+    z-index: 99;
+  color: #fff;
+}
+
+.login_info h1{
+  text-transform: capitalize;
+  font-size: 20px;
+  position: relative;
+  letter-spacing: 0.7px;
+}
+
+.login_info h1::after{
+  content: '';
+  height: 6px;
+  width: 6px;
+  background-color: #8CF227;
+  display: block;
+  position: absolute;
+  top: 0;
+  border-radius: 50%;
+  right: -7px;
+}
+
+.login_info button{
+  padding: 7px 16px;
+  font-size: 18px;
+  background-color: var(--secondary-color);
+  border-radius: 8px;
+  letter-spacing: 0.7px;
+  font-weight: 600;
+  
+}
+
+.login_info button:hover{
+  background-color: var(--tertiary-color);
+  border-radius: 8px;
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+  transition: 0.3s;
 }

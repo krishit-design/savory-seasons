@@ -48,7 +48,7 @@ const contact = () => {
     setEmailError('');
     setPhoneError('');
     try {
-      const response = await fetch('http://localhost:8081/Contact', {
+      const response = await fetch('https://localhost:7012/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
