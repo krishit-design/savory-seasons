@@ -4,12 +4,15 @@
 
 @font-face {
   font-family: heading;
-  src: url(../../public/assets/fonts/Mofista.ttf);
+  /* src: url(../../public/assets/fonts/Mofista.ttf); */
+  src: url(../../public/assets/fonts/Realce-Black-v0.006.otf);
 }
 
 @font-face {
   font-family: desc;
   src: url(../../public/assets/fonts/rogie.ttf);
+  /* src: url(../../public/assets/fonts/TMT-LimkinVF.woff); */
+  /* src: url(../../public/assets/fonts/Realce-Black-v0.006.otf); */
 }
 
 /*thumb*/
@@ -42,7 +45,11 @@ body {
   background: linear-gradient(to bottom,
       transparent,
       rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
-  font-family: desc !important;
+  font-family: desc;
+}
+
+.heading-font{
+  font-family: heading;
 }
 
 .container {

@@ -18,10 +18,10 @@ export function SpotlightName() {
         fill="white"
       />
       <div className=" p-4 max-w-7xl  mx-auto relative z-10  w-full pt-20 md:pt-0">
-        <h1 className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
+        <h1 className="text-4xl md:text-7xl heading-font font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
           Welcome to <br /> Savory Seasons
         </h1>
-        <p className="mt-4 font-normal text-lg text-neutral-300 max-w-lg text-center mx-auto">
+        <p className="mt-4 font-normal text-xl text-neutral-300 max-w-xl text-center mx-auto">
           At Savory Seasons, we believe that every event is a unique celebration of taste, and we are here to turn your moments into memories through the art of culinary excellence. Established with a passion for creating delightful culinary experiences, Savory Seasons has been a trusted name in the catering industry.
           
         </p>
@@ -219,7 +219,7 @@ export function TabsServices() {
   return (
     <div className="tabs-container [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full  items-start justify-start my-40">
       <div className=" p-4 max-w-7xl  mx-auto relative z-10  w-full pt-20 md:pt-0">
-        <h1 className="text-4xl md:text-7xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
+        <h1 className="text-4xl md:text-7xl heading-font font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
           Our Services
         </h1>
       </div>

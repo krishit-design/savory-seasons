@@ -10,39 +10,12 @@ function Header() {
     const router = useRouter();
     const pathname = usePathname()
     const [username, setUsername] = useState('');
-    useEffect(() => {
-        const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
-        if (!isLoggedIn) {
-          router.push('/login');
-        } else {
-          const storedUsername = localStorage.getItem('UserNameOrEmail');
-          if (storedUsername) {
-            setUsername(storedUsername);
-          } else {
-            // Handle case when username is not stored
-          }
-        }
-      }, []);
-      const handleLogout = () => {
-        const confirmLogout = window.confirm('Are you sure you want to logout?');
-        if (confirmLogout) {
-          // Clear isLoggedIn and UserNameOrEmail from local storage
-          localStorage.removeItem('isLoggedIn');
-          localStorage.removeItem('UserNameOrEmail');
-          localStorage.removeItem('role');
-          // Redirect to login page
-          router.push('/login');
-        }
-      };
+    
     return (
         <>
             <Link href={'/'} className="logo">
                 <img src="assets/images/logo-ss.svg" alt="" />
             </Link>
-            <div className="login_info">
-                <h1>{username}</h1> {/* Pass username as a prop */}
-                <button onClick={handleLogout}>Logout</button> {/* Logout button */}
-            </div>
             <nav>
                 <div className="navigation">
                     <li>
