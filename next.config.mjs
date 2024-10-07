@@ -13,6 +13,8 @@ const nextConfig = {
         eslint: {
           ignoreDuringBuilds: true,
       },
+      buildOptimizer : false,
+      swcMinify: false,
 };
 
 export default nextConfig;
