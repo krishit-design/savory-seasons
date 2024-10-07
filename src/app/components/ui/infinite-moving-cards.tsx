@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 function InfiniteMovingCards() {
@@ -18,11 +19,11 @@ function InfiniteMovingCards() {
                   <div className="testi-box">
                     <div className="testi-head">Ananya S., Birthday Host</div>
                     <div className="testi-rating">
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
                     </div>
                     <div className="testi-desc">
                       Savory Seasons turned my birthday into an unforgettable feast! The
@@ -39,11 +40,11 @@ function InfiniteMovingCards() {
                   <div className="testi-box">
                     <div className="testi-head">Priya R., IT Professional</div>
                     <div className="testi-rating">
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
                     </div>
                     <div className="testi-desc">
                       As an IT professional juggling a hectic schedule, Savory Seasons
@@ -56,11 +57,11 @@ function InfiniteMovingCards() {
                   <div className="testi-box">
                     <div className="testi-head">Raj D., Engineer</div>
                     <div className="testi-rating">
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
                     </div>
                     <div className="testi-desc">
                       Savory Seasons Catering has elevated our corporate events with their
@@ -72,11 +73,11 @@ function InfiniteMovingCards() {
                   <div className="testi-box">
                     <div className="testi-head">Sobha S., Teacher</div>
                     <div className="testi-rating">
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
                     </div>
                     <div className="testi-desc">
                       Planning school events can be overwhelming, but Savory Seasons Catering
@@ -88,11 +89,11 @@ function InfiniteMovingCards() {
                   <div className="testi-box">
                     <div className="testi-head">Karthik S., Business Owner</div>
                     <div className="testi-rating">
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
                     </div>
                     <div className="testi-desc">
                       As a business owner, impressing clients is paramount. Savory Seasons
@@ -104,11 +105,11 @@ function InfiniteMovingCards() {
                   <div className="testi-box">
                     <div className="testi-head">Pooja K., Wedding Coordinator</div>
                     <div className="testi-rating">
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
                     </div>
                     <div className="testi-desc">
                       Savory Seasons Catering has transformed countless weddings into culinary
@@ -121,11 +122,11 @@ function InfiniteMovingCards() {
                   <div className="testi-box">
                     <div className="testi-head">Ravi G., Nonprofit Organizer</div>
                     <div className="testi-rating">
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
                     </div>
                     <div className="testi-desc">
                       Coordinating events for our nonprofit organization comes with its
@@ -138,11 +139,11 @@ function InfiniteMovingCards() {
                   <div className="testi-box">
                     <div className="testi-head">Tanvi M., Socialite</div>
                     <div className="testi-rating">
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
                     </div>
                     <div className="testi-desc">
                       Savory Seasons Catering has added a touch of sophistication to my social
@@ -155,11 +156,11 @@ function InfiniteMovingCards() {
                   <div className="testi-box">
                     <div className="testi-head">Aditya B., Financial Analyst</div>
                     <div className="testi-rating">
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
                     </div>
                     <div className="testi-desc">
                       In the world of numbers and analysis, Savory Seasons Catering brings a
@@ -172,11 +173,11 @@ function InfiniteMovingCards() {
                   <div className="testi-box">
                     <div className="testi-head">Neha P., HR Manager</div>
                     <div className="testi-rating">
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
                     </div>
                     <div className="testi-desc">
                       Organizing employee appreciation events can be challenging, but with
@@ -193,11 +194,11 @@ function InfiniteMovingCards() {
                   <div className="testi-box">
                     <div className="testi-head">Rahul S., Conference Organizer</div>
                     <div className="testi-rating">
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
                     </div>
                     <div className="testi-desc">
                       "Savory Seasons Catering has consistently impressed our conference
@@ -211,11 +212,11 @@ function InfiniteMovingCards() {
                   <div className="testi-box">
                     <div className="testi-head">Meera A., Fashion Designer</div>
                     <div className="testi-rating">
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
                     </div>
                     <div className="testi-desc">
                       Savory Seasons Catering adds a touch of flair to my fashion events. The
@@ -227,11 +228,11 @@ function InfiniteMovingCards() {
                   <div className="testi-box">
                     <div className="testi-head">Rajiv K., Tech Entrepreneur</div>
                     <div className="testi-rating">
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
                     </div>
                     <div className="testi-desc">
                       Savory Seasons Catering has been a crucial element in the success of our
@@ -244,11 +245,11 @@ function InfiniteMovingCards() {
                   <div className="testi-box">
                     <div className="testi-head">Sonia R., Fitness Instructor</div>
                     <div className="testi-rating">
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
                     </div>
                     <div className="testi-desc">
                       Organizing wellness retreats requires attention to every detail,
@@ -261,11 +262,11 @@ function InfiniteMovingCards() {
                   <div className="testi-box">
                     <div className="testi-head">Vijay L., Real Estate Developer</div>
                     <div className="testi-rating">
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
                     </div>
                     <div className="testi-desc">
                       Savory Seasons Catering has become an integral part of our high-end real
@@ -278,11 +279,11 @@ function InfiniteMovingCards() {
                   <div className="testi-box">
                     <div className="testi-head">Anita G., Art Gallery Curator</div>
                     <div className="testi-rating">
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
                     </div>
                     <div className="testi-desc">
                       Savory Seasons Catering adds a culinary masterpiece to our art gallery
@@ -295,11 +296,11 @@ function InfiniteMovingCards() {
                   <div className="testi-box">
                     <div className="testi-head">Rohan M., Travel Blogger</div>
                     <div className="testi-rating">
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
                     </div>
                     <div className="testi-desc">
                       Exploring diverse cuisines is my passion, and Savory Seasons Catering
@@ -311,11 +312,11 @@ function InfiniteMovingCards() {
                   <div className="testi-box">
                     <div className="testi-head">Arpita S., Wedding Photographer</div>
                     <div className="testi-rating">
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
                     </div>
                     <div className="testi-desc">
                       Capturing the magic of weddings is my expertise, and Savory Seasons
@@ -328,11 +329,11 @@ function InfiniteMovingCards() {
                   <div className="testi-box">
                     <div className="testi-head">Ananya S., Birthday Host</div>
                     <div className="testi-rating">
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
                     </div>
                     <div className="testi-desc">
                       Savory Seasons turned my birthday into an unforgettable feast! The
@@ -349,11 +350,11 @@ function InfiniteMovingCards() {
                   <div className="testi-box">
                     <div className="testi-head">Kiran R., Wellness Coach</div>
                     <div className="testi-rating">
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
                     </div>
                     <div className="testi-desc">
                       Savory Seasons Catering aligns perfectly with my wellness events. Their
@@ -369,11 +370,11 @@ function InfiniteMovingCards() {
                   <div className="testi-box">
                     <div className="testi-head">Amita J., NGO Coordinator</div>
                     <div className="testi-rating">
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
                     </div>
                     <div className="testi-desc">
                       Organizing events for our non-profit comes with a purpose, and Savory
@@ -386,11 +387,11 @@ function InfiniteMovingCards() {
                   <div className="testi-box">
                     <div className="testi-head">Rajat S., Book Club Organizer</div>
                     <div className="testi-rating">
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
                     </div>
                     <div className="testi-desc">
                       Savory Seasons Catering has become the literary companion to our book
@@ -402,11 +403,11 @@ function InfiniteMovingCards() {
                   <div className="testi-box">
                     <div className="testi-head">Ritu M., Financial Consultant</div>
                     <div className="testi-rating">
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
                     </div>
                     <div className="testi-desc">
                       In the world of finance, precision is key. Savory Seasons Catering not
@@ -418,11 +419,11 @@ function InfiniteMovingCards() {
                   <div className="testi-box">
                     <div className="testi-head">Aditi K., Event Stylist</div>
                     <div className="testi-rating">
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
                     </div>
                     <div className="testi-desc">
                       Savory Seasons Catering is the secret ingredient to my styled events.
@@ -433,11 +434,11 @@ function InfiniteMovingCards() {
                   <div className="testi-box">
                     <div className="testi-head">Pranav D., Tech Innovator</div>
                     <div className="testi-rating">
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
                     </div>
                     <div className="testi-desc">
                       Tech events demand innovation in every aspect, including catering.
@@ -449,11 +450,11 @@ function InfiniteMovingCards() {
                   <div className="testi-box">
                     <div className="testi-head">Anjali S., Travel Enthusiast</div>
                     <div className="testi-rating">
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
                     </div>
                     <div className="testi-desc">
                       Savory Seasons Catering brings the taste of world cuisines to my
@@ -464,11 +465,11 @@ function InfiniteMovingCards() {
                   <div className="testi-box">
                     <div className="testi-head">Rajendra M., Sports Event Organizer</div>
                     <div className="testi-rating">
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
                     </div>
                     <div className="testi-desc">
                       From halftime snacks to VIP dinners, Savory Seasons Catering is the MVP
@@ -479,11 +480,11 @@ function InfiniteMovingCards() {
                   <div className="testi-box">
                     <div className="testi-head">Nisha B., Fashion Blogger</div>
                     <div className="testi-rating">
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
                     </div>
                     <div className="testi-desc">
                       In the fashion world, presentation matters, and Savory Seasons Catering
@@ -494,11 +495,11 @@ function InfiniteMovingCards() {
                   <div className="testi-box">
                     <div className="testi-head">Kabir S., Musician</div>
                     <div className="testi-rating">
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
                     </div>
                     <div className="testi-desc">
                       Savory Seasons Catering knows how to hit the right notes. Their catering
@@ -510,11 +511,11 @@ function InfiniteMovingCards() {
                   <div className="testi-box">
                     <div className="testi-head">Preeti G., Interior Designer</div>
                     <div className="testi-rating">
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
                     </div>
                     <div className="testi-desc">
                       Just like in design, details matter in catering. Savory Seasons Catering
@@ -530,11 +531,11 @@ function InfiniteMovingCards() {
                   <div className="testi-box">
                     <div className="testi-head">Ankur R., Film Producer</div>
                     <div className="testi-rating">
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
                     </div>
                     <div className="testi-desc">
                       Behind every successful film premiere is the perfect catering, and
@@ -545,11 +546,11 @@ function InfiniteMovingCards() {
                   <div className="testi-box">
                     <div className="testi-head">Reena M., Environmentalist</div>
                     <div className="testi-rating">
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
                     </div>
                     <div className="testi-desc">
                       Sustainability matters, even in catering. Savory Seasons Catering's
@@ -560,11 +561,11 @@ function InfiniteMovingCards() {
                   <div className="testi-box">
                     <div className="testi-head">Varun P., Technology Blogger</div>
                     <div className="testi-rating">
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
                     </div>
                     <div className="testi-desc">
                       Savory Seasons Catering brings a taste of innovation to my tech meetups.
@@ -575,11 +576,11 @@ function InfiniteMovingCards() {
                   <div className="testi-box">
                     <div className="testi-head">Ayesha R., Wedding Planner</div>
                     <div className="testi-rating">
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
                     </div>
                     <div className="testi-desc">
                       In the world of weddings, where every detail counts, Savory Seasons
@@ -591,11 +592,11 @@ function InfiniteMovingCards() {
                   <div className="testi-box">
                     <div className="testi-head">Rohit S., Connoisseur</div>
                     <div className="testi-rating">
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
                     </div>
                     <div className="testi-desc">
                       Pairing fine here every detail counts, Savory Seasons Catering stands
@@ -606,11 +607,11 @@ function InfiniteMovingCards() {
                   <div className="testi-box">
                     <div className="testi-head">Tara N., Yoga Instructor</div>
                     <div className="testi-rating">
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
                     </div>
                     <div className="testi-desc">
                       Mindful eating is an essential part of a holistic lifestyle, and Savory
@@ -622,11 +623,11 @@ function InfiniteMovingCards() {
                   <div className="testi-box">
                     <div className="testi-head">Rishi D., Photography Enthusiast</div>
                     <div className="testi-rating">
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
                     </div>
                     <div className="testi-desc">
                       Capturing the essence of events through my lens requires attention to
@@ -638,11 +639,11 @@ function InfiniteMovingCards() {
                   <div className="testi-box">
                     <div className="testi-head">Lata A., Cultural Event Organizer</div>
                     <div className="testi-rating">
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
                     </div>
                     <div className="testi-desc">
                       Cultural diversity is celebrated through cuisine at my events, and
@@ -654,11 +655,11 @@ function InfiniteMovingCards() {
                   <div className="testi-box">
                     <div className="testi-head">Kabir M., Gaming Enthusiast</div>
                     <div className="testi-rating">
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
                     </div>
                     <div className="testi-desc">
                       Gaming events demand an energy boost, and Savory Seasons Catering
@@ -670,11 +671,11 @@ function InfiniteMovingCards() {
                   <div className="testi-box">
                     <div className="testi-head">Aditi S., Pet Adoption Advocate</div>
                     <div className="testi-rating">
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
-                      <img src="assets/images/star.png" alt="" />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
+                      <Image src="/assets/images/star.png" alt="" width={30} height={30} />
                     </div>
                     <div className="testi-desc">
                       "Savory Seasons Catering understands the importance of furry friends in
