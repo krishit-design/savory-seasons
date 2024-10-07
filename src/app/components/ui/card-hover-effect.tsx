@@ -1,4 +1,4 @@
-import { projects } from "@/app/contact/contact";
+import { projects } from "@/app/contact/page";
 import { cn } from "@/utils/cn";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
