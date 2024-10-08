@@ -112,28 +112,28 @@ const service = () => {
       content: <SkeletonOne />,
       className: "md:col-span-2 object-cover",
       thumbnail:
-        "assets/images/services/serviceGrid1.svg",
+        "/assets/images/services/serviceGrid1.webp",
     },
     {
       id: 2,
       content: <SkeletonTwo />,
       className: "col-span-1 object-cover",
       thumbnail:
-        "assets/images/services/serviceGrid2.svg",
+        "/assets/images/services/serviceGrid2.webp",
     },
     {
       id: 3,
       content: <SkeletonThree />,
       className: "col-span-1 object-cover",
       thumbnail:
-        "assets/images/services/serviceGrid3.svg",
+        "/assets/images/services/serviceGrid3.webp",
     },
     {
       id: 4,
       content: <SkeletonFour />,
       className: "md:col-span-2 object-cover",
       thumbnail:
-        "assets/images/services/serviceGrid4.svg",
+        "/assets/images/services/serviceGrid4.webp",
     },
   ];
 

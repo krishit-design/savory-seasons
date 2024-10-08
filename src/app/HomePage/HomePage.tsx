@@ -38,94 +38,94 @@ export const products = [
     title: "Food Dish",
     link: "",
     thumbnail:
-      "/assets/images/secOne-15.jpg"
+      "/assets/images/secOne-15.webp"
   },
   {
     title: "Indian Dish",
     link: "",
     thumbnail:
-      "/assets/images/secOne-4.jpg"
+      "/assets/images/secOne-4.webp"
   },
   {
     title: "Rice",
     link: "",
     thumbnail:
-      "/assets/images/secOne-3.jpg"
+      "/assets/images/secOne-3.webp"
   },
 
   {
     title: "Buffet's",
     link: "",
     thumbnail:
-      "/assets/images/secOne-4.jpg"
+      "/assets/images/secOne-4.webp"
   },
   {
     title: "Dishes",
     link: "",
     thumbnail:
-      "/assets/images/secOne-5.jpg"
+      "/assets/images/secOne-5.webp"
   },
   {
     title: "Dishes1",
     link: "",
     thumbnail:
-      "/assets/images/secOne-6.jpg"
+      "/assets/images/secOne-6.webp"
   },
 
   {
     title: "Beverages",
     link: "",
     thumbnail:
-      "/assets/images/secOne-7.jpg"
+      "/assets/images/secOne-7.webp"
   },
   {
     title: "Deserts",
     link: "",
     thumbnail:
-      "/assets/images/secOne-8.jpg"
+      "/assets/images/secOne-8.webp"
   },
   {
     title: "Spices Dish",
     link: "",
     thumbnail:
-      "/assets/images/secOne-9.jpg"
+      "/assets/images/secOne-9.webp"
   },
   {
     title: "Punjabi Dishes",
     link: "",
     thumbnail:
-      "/assets/images/secOne-10.jpg"
+      "/assets/images/secOne-10.webp"
   },
   {
     title: "Spices",
     link: "",
     thumbnail:
-      "/assets/images/secOne-11.jpg"
+      "/assets/images/secOne-11.webp"
   },
 
   {
     title: "",
     link: "",
     thumbnail:
-      "/assets/images/secOne-12.jpg"
+      "/assets/images/secOne-12.webp"
   },
   {
     title: "Food Bowl",
     link: "",
     thumbnail:
-      "/assets/images/secOne-13.jpg"
+      "/assets/images/secOne-13.webp"
   },
   {
     title: "Spices1",
     link: "",
     thumbnail:
-      "/assets/images/secOne-14.jpg"
+      "/assets/images/secOne-14.webp"
   },
   {
     title: "Gujarati Dishes",
     link: "",
     thumbnail:
-      "/assets/images/secOne-1.jpg"
+      "/assets/images/secOne-1.webp"
   },
 ];
 
@@ -148,7 +148,7 @@ export function TabsServices() {
 
             <p>Corporate</p>
             <div className="content">
-              <img src="assets/images/services/service1.svg" alt="" />
+              <img src="/assets/images/services/service1.webp" alt="" />
               <div className="content-desc">
                 <div className="desc">Our job is to make you look good. From office lunches to large-scale corporate events, we’ve made our business out of making your business shine.</div>
                 <button className="linkWrap">
@@ -173,7 +173,7 @@ export function TabsServices() {
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white tab-bg">
           <p>Social</p>
           <div className="content">
-            <img src="assets/images/services/service2.svg" alt="" />
+            <img src="/assets/images/services/service2.webp" alt="" />
             <div className="content-desc">
               <div className="desc">We sweat the small stuff, so you don’t have to. For all of life’s special occasions, we give your anniversary, shower, or birthday party the attention it deserves, allowing you to focus on being present with your guests!</div>
               <button className="linkWrap">
@@ -197,7 +197,7 @@ export function TabsServices() {
         <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white tab-bg">
           <p>Weddings</p>
           <div className="content">
-            <img src="assets/images/services/service3.svg" alt="" />
+            <img src="/assets/images/services/service3.webp" alt="" />
             <div className="content-desc">
               <div className="desc">The most important day of your life, is ours too. Your wedding should be the ultimate celebration of your relationship, and our team of experts guide you through the process, offering peace of mind and a remarkable experience.</div>
               <button className="linkWrap">

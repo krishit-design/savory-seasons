@@ -16,7 +16,7 @@ export function BackgroundBeamsFooter() {
                 alt="" /></Link>
               <Link href="https://www.instagram.com/" target="_blank"><img className="social-icon" src="assets/images/footer-icons/instagram.svg"
                 alt="" /></Link>
-              <Link href="https://twitter.com/" target="_blank"><img className="social-icon" src="assets/images/footer-icons/x.svg" alt="" /></Link>
+              <Link href="https://twitter.com/" target="_blank"><img className="social-icon" src="assets/images/footer-icons/x.webp" alt="" /></Link>
             </div>
           </div>
           <div className="links-connect">
