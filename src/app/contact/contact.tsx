@@ -193,7 +193,7 @@ export const projects = [
   },
   {
     title: "X ( Twitter )",
-    image: "assets/images/footer-icons/x.svg",
+    image: "assets/images/footer-icons/x.webp",
     description: "Breaking News: Be the first to know about our latest product launches, promotions, and updates.",
     link: "http://twitter.com/",
     id: "twitter",
